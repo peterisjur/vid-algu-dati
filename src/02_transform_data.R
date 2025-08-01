@@ -41,5 +41,7 @@ data_processed <- combined_data %>%
 
 # save data to xlsx file
 write_xlsx(data_processed, "data/processed_vid_data.xlsx")
+write_csv(data_processed, "data/processed_vid_data.csv")
+write_rds(data_processed, "data/processed_vid_data.rds", compress = "gz")
 
 
